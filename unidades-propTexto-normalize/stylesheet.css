@@ -1,0 +1,45 @@
+/*****************************UNIDADES****************************/
+ /*Se puede indicar el tamaño de algo con px, pero para que sea mas responsive se utilizaran otras unidades*/
+
+
+/*EM*/
+.contact-form {
+    font-size: 20px;
+} 
+
+
+.contact-form__h2 {
+    font-size: 5em;        /*Por defecto 1 em= 16px (definido por el browser). */
+}                          /*Sin embargo como contact-form define que su font-size= 20px nuestro em (solo para font-size) ahora será de 20px ya que es el contenedor de .contact-form__h2*/
+                            /*Esto puede hacerse para cualquier otro atributo que requiera medidas (padding, margin,etc)
+
+/*VIEWPORT*/
+
+/*Con vh y vw puedo definir el tamaño de un box en funcion del tamaño de la pantalla. 100vh quiere decir que ocupara el 100% de la pantalla de forma vertical
+50vw quiere decir que ocupara la mitad de la pantalla de forma horizontal*/
+.contact-form__h2 {
+    background-color: lightblue;
+    height: 25vh;
+    width: 50vw;
+}
+
+/**********************PROPIEDADES DE TEXTO***********************/
+
+.contact-form__h2 {
+    font-size: 2em;
+    font-family: Georgia;
+    line-height: 2;   /*line-height=1 -> el texto ocupara el tamaño original que ocupa la letra. line-height=2 va a ocupar el doble pero desde el centro de la letra (probar seleccionando texto)*/
+    font-weight: 600; /*Indica el grosor de la letra*/
+}
+
+
+
+/***************************NORMALIZE*****************************/
+/*Los navegadores definen por defecto todas las propiedades de los elementos en css. Descargando el archivo normalize.css podemos modificar esas propiedades a nuestro gusto.
+No debemos olvidar incluirlo en nuestro html*/
+
+
+.item p{
+    display: inline;
+}
+

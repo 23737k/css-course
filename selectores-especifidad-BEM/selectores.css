@@ -1,0 +1,97 @@
+/****************************SELECTORES***************************************/
+/*Selector Universal: modifica a todos los elementos*/
+
+/*
+
+* {
+color: red;
+}
+
+*/
+
+/*Selector de tipo*/
+h2 {
+color: blue;
+}
+
+/*Selector de clase*/
+.titulo-h2{
+color:green;
+}
+
+/*Selector de ID*/
+
+#id-elemento{
+color: violet;
+}
+
+/*Selector por Atributo*/ 
+[atributo="valor"] {	/*Se pueden crear atributos*/
+color:orange;
+}
+
+/*Selector descendiente*/
+h2 p {        /*Se modifican todos los parrafos dentro de h2. Se colocan los elementos/clases de afuera hacia adentro*/
+color: grey;
+}
+
+.titulo-h2 p{       /*Modifica todos los párrafos dentro de la clase titulo-h2*/
+}
+
+/*Selector por Pseudoclases*/
+/*en un evento se genera una seleccion*/
+
+p b:hover {	/*Se pone en rojo cuando paso el mouse por arriba (evento)*/
+color:red;
+}
+
+a:active {
+	color: orangered;		/*Cuando se mantiene clickeado el link se pone de color naranja*/
+}
+
+a:visited{				/*Cuando se visita el link se pone en verde*/
+	color: green;
+}
+
+
+
+
+/***************************ESPECIFICIDAD****************************************/
+/*abajo: menor prioridad | arriba: mayor prioridad
+
+!important			Se le agrega al lado de la propiedad
+estilos en linea	Aquellos que se definen en el html
+identificadores
+clases, pseudo-clases,  atributos     Cuando tenemos elementos de la misma jerarquia, se utiliza cascada
+pseudo-elementos, elementos
+
+*/
+
+/*************************METODOLOGIA BEM****************************************/
+/*
+Convencion de naming para las clases
+
+Ej1: 
+<div class="contact-form">
+	<p class="contact-form__p">				por cada bloque/contenedor: __
+		<h2 class="contact-form__p-h2"> </h2> 	por cada elemento se coloca -
+	</p>
+</div>
+
+Ej2:
+<div class="contact-form">
+	<input type="text" class="contact-form__input--active">              Con -- señalamos que es un elemento es distinto del resto
+	<input type="text" class="contact-form__input">
+	<input type="text" class="contact-form__input">
+</div>
+
+
+
+*/
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+/********CAJAS*************
+
+Block level elements: aquellos que se ajustan al ancho total de su contenedor. Si ponemos dos de este tipo, por ej un h2 y un p
+cada uno por defecto estarán en una linea distinta.
+Inline elements: aquellos que solo ocupan el espacio del contenido: b,span. Puedo colocar dos en la misma linea
+*/
+.inline-title {
+display:inline-block;	/*Con la prop display podemos hacer que un elemento sea inline*/
+}
+
+/*Los elementos en bloque tienen propiedades que los elementos en linea no, como height y width */
+.inline-title--modificada{
+height:200px;	/*con f12 puedo ver cuanto ocupan los elementos*/
+width:200px;
+}
+
+/*******PROPIEDADES DE CAJAS*******/
+
+/*Padding: distancia entre el texto y el borde de la caja. 
+padding-bottom:20px;
+padding-top:20px;
+padding-left:30px;
+padding-right:30px;	
+Padding es una short hand property, por lo que se puede escribir asi: 
+	padding: 20px  					-> 20px a todos los lados
+	padding: 20px 30px  			-> 20px a top y bottom  30px a left y right
+	padding: 10px 20px 30px 40px 	-> (top,right,bottom,left)
+	padding: 10 px 20px 30px 		->(10px top- 20px right y left- 30 bottom)
+*/
+
+/*Box-sizing:
+	box-sizing: border-box;	El tamaño de la caja se mantiene, sin importar el contenido. El contenido a veces puede quedar afuera
+	box-sizing:content-box;	El tamaño de la caja varia (margin, padding). El contenido siempre queda adentro
+*/
+
+.caja-modificada {
+background-color: red;
+display:inline-block;
+padding:100px;
+box-sizing: border-box;	
+text-align:center;
+margin:10px; 		/*Distancia entre dos boxes. Short hand property (analogo a padding)*/
+border-radius:20px;  /*Para redondear las cajas. Se puede usar con em, px, %*/
+/*border: 10px solid black;    para el borde la caja */
+box-shadow: 2px 4px 15px 0 black;  /*(eje x, eje y, tamaño del desenfoque de la sombra, tamaño del borde,  color de la sombra)*/
+text-shadow: 2px 2px 7px white;
+/*transform: rotate(45deg);    /*rotamos. Hay que indicar la unidad*/
+
+}
+
+
+ 
+
+
+
